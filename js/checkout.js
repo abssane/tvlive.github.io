@@ -5,6 +5,6 @@ window.onload = function () {
 
   document.getElementById("offre").innerHTML = offre;
   document.getElementById("price").innerHTML = price;
-  document.getElementById("offre").value = offre;
-  document.getElementById("price").value = price;
+  document.getElementById("offree").value = offre;
+  document.getElementById("pricee").value = price;
 };

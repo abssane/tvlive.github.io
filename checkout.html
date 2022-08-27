@@ -19,8 +19,10 @@
     />
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+      href="https://s.pageclip.co/v1/pageclip.css"
+      media="screen"
     />
+
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
     <link rel="icon" href="images/favicon.png" type="image/x-icon" />
 
@@ -47,9 +49,9 @@
             <div class="pull-left">
               <ul class="info">
                 <li>
-                  <a href="tel:+6789-875-2235"
-                    ><span class="icon flaticon-maps-and-flags"></span>WhatsApp:
-                    +6789-875-2235</a
+                  <a href="https://wa.me/+33187653287" target="_blank"
+                    ><i class="fa fa-whatsapp whatsapp-icon"></i> WhatsApp:
+                    +33187653287</a
                   >
                 </li>
                 <li>
@@ -294,11 +296,15 @@
           <!--Billing Details-->
           <div class="billing-details">
             <div class="shop-form">
+              <<<<<<< HEAD
               <div id="error"></div>
               <form
-                action="https://send.pageclip.co/Ha4MwPN3gPgxScuXyoX3T0AaXmmv7Ucb"
-                method="post"
+              action="https://send.pageclip.co/Ha4MwPN3gPgxScuXyoX3T0AaXmmv7Ucb"
+              =======
+              <form
+                action="https://send.pageclip.co/TSy3wScT7h4Nm0vHnQRHl946FO89xRdd"
               >
+                >>>>>> d054e9f37dcdd9a2b313211a53195e4137aa68e0 method="post" >
                 <div class="row clearfix">
                   <div class="col-lg-6 col-md-12 col-sm-12">
                     <div class="sec-title"><h2>Billing Details</h2></div>
@@ -332,14 +338,12 @@
 
                         <!--Form Group-->
                         <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                          <div class="field-label">
-                            WhatsApp Number <sup>*</sup>
-                          </div>
+                          <div class="field-label">Phone <sup>*</sup></div>
                           <input
                             type="tel"
                             name="phone"
                             id="phone"
-                            placeholder="WhatsApp"
+                            placeholder="Phone"
                             required
                           />
                         </div>
@@ -396,8 +400,8 @@
                             </li>
                           </ul>
                         </div>
-                        <input type="hidden" name="offre" id="offre" />
-                        <input type="hidden" name="price" id="price" />
+                        <input type="hidden" name="offree" id="offree" />
+                        <input type="hidden" name="pricee" id="pricee" />
                         <button type="submit" class="theme-btn btn-style-four">
                           <span class="txt">Place Order</span>
                         </button>
@@ -435,8 +439,10 @@
                 <span class="icon"
                   ><img src="images/icons/icon-1.png" alt=""
                 /></span>
-                <a href="tel:+3453-909-6565">+3453-909-6565</a><br />
-                <a href="tel:+2390-875-223">+2390-875-223</a>
+                <a href="https://wa.me/+33187653287" target="_blank"
+                  ><i class="fa fa-whatsapp whatsapp-icon"></i> WhatsApp:
+                  +33187653287</a
+                >
               </li>
               <li>
                 <span class="icon"
@@ -486,60 +492,52 @@
             name="search-field"
             value=""
             placeholder="Search Here"
-            required=""
+            required
           />
           <button type="submit"><i class="fa fa-search"></i></button>
         </div>
       </form>
     </div>
+    <a href="https://wa.me/+33187653287" class="whatsapp_float" target="_blank">
+      <i class="fa fa-whatsapp whatsapp-icon"></i
+    ></a>
     <!-- End Header Search -->
 
     <!-- Scroll To Top -->
-    <!-- <div class="scroll-to-top scroll-to-target" data-target="html">
-      <span class="fa fa-arrow-up"></span>
-    </div> -->
-    <a
-      href="https://wa.me/+212640832823"
-      class="whatsapp_float"
-      target="_blank"
-    >
-      <i class="fa fa-whatsapp whatsapp-icon"></i
-    ></a>
+
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
-      const name = document.getElementById("name");
-      const country = document.getElementById("country");
-      const phone = document.getElementById("phone");
-      const email = document.getElementById("email");
-      const form = document.getElementById("form");
-      const errorElement = document.getElementById("error");
-
-      form.addEventListener("submit", (e) => {
-        let messages = [];
-
-        if (name.value === "" || name.value == null) {
-          messages.push("Name is required");
-        }
-
-        if (country.value === "" || country.value == null) {
-          messages.push("Country is required");
-        }
-
-        if (phone.value === "" || phone.value == null) {
-          messages.push("Phone is required");
-        }
-
-        if (phone.value === "" || phone.value == null) {
-          messages.push("Phone is required");
-        }
-
-        if (messages.length > 0) {
-          e.preventDefault();
-          errorElement.innerText = messages.join(", ");
-        }
+      function sendEmail() {
+        Email.send({
+          Host: "smtp.gmail.com",
+          Username: "coinaimrane@gmail.com",
+          Password: "@Aa1176849",
+          To: "aimrane2002@gmail.com",
+          From: "coinaimrane@gmail.com",
+          Subject: "New Order",
+          Body:
+            "Full name : " +
+            document.getElementById("name").value +
+            "</br>Phone number : " +
+            document.getElementById("phone").value +
+            "</br>Country : " +
+            document.getElementById("country").value,
+        }).then((message) => alert("mail sent successfully"));
+      }
+    </script> -->
+    <script>
+      var form = document.querySelector(".pageclip-form");
+      Pageclip.form(form, {
+        onSubmit: function (event) {},
+        onResponse: function (error, response) {},
+        successTemplate: "<span>Thank you!</span>",
       });
     </script>
     <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 
+    <<<<<<< HEAD =======
+    <script src="js/index.js"></script>
+    >>>>>>> d054e9f37dcdd9a2b313211a53195e4137aa68e0
     <script src="js/checkout.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/popper.min.js"></script>

@@ -45,6 +45,21 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     />
+
+    <!-- Google tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-238345134-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-238345134-1");
+    </script>
   </head>
 
   <body class="hidden-bar-wrapper">
@@ -348,7 +363,9 @@
 
                         <!--Form Group-->
                         <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                          <div class="field-label">Phone <sup>*</sup></div>
+                          <div class="field-label">
+                            Whatsapp number <sup>*</sup>
+                          </div>
                           <input
                             type="tel"
                             name="phone"

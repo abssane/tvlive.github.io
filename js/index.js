@@ -22,7 +22,7 @@ function handleSubmit(id) {
   if (id == 5) {
     // to set into local storage
     localStorage.setItem("offre", "PACK Test");
-    localStorage.setItem("price", "$0.99");
+    localStorage.setItem("price", "$0.00");
   }
 
   return;
